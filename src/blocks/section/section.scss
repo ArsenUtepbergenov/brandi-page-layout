@@ -1,0 +1,29 @@
+.section {
+  &__title {
+    padding-top: 75px;
+    width: 230px;
+    margin: 0 auto 60px auto;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    color: lightgrey;
+  }
+
+  &__h {
+    font-weight: bold;
+    color: #0eb493;
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    padding: 6px 15px;
+    background-color: transparent;
+    z-index: 2;
+  }
+}

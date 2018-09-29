@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 600px;
+
+  &__content {
+    height: 100%;
+    position: relative;
+  }
+
+  &--text-bold {
+    font-weight: bold;
+  }
+
+  &--text-color-theme {
+    color: var(--color-theme);
+  }
+
+  @media screen and (min-width: 1170px) {
+    height: 800px;
+  }
+}

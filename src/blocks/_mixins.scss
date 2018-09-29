@@ -1,0 +1,8 @@
+@mixin setup-section($height, $bg-color) {
+  min-height: $height;
+  background-color: $bg-color;
+
+  &__icon {
+    background-color: $bg-color;
+  }
+}

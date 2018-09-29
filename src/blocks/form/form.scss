@@ -1,0 +1,91 @@
+.form {
+  &__field {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  &__h {
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  &__button {
+    background: none;
+    width: 145px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__button i {
+    font-size: 1.5em;
+  }
+
+  &__input {
+    padding: 10px 10px 10px 3px;
+    line-height: 1.5;
+    display: block;
+    width: 300px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+  }
+
+  &__label {
+    color: grey;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 3px;
+    top: 0;
+    transition: 0.2s all ease;
+  }
+
+  &__input:focus ~ &__label,
+  &__input:valid ~ &__label {
+    top: -18px;
+    color: var(--color-theme);
+  }
+
+  &__bar {
+    position: relative;
+    display: block;
+    width: 300px;
+  }
+
+  &__bar::after,
+  &__bar::before {
+    content: '';
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: var(--color-theme);
+    transition: 0.2s all ease;
+  }
+
+  &__bar::before {
+    left: 50%;
+  }
+
+  &__bar::after {
+    right: 50%;
+  }
+
+  &__input:focus ~ &__bar::after,
+  &__input:focus ~ &__bar::before {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__input {
+      width: 370px;
+    }
+
+    &__bar {
+      width: 370px;
+    }
+  }
+}

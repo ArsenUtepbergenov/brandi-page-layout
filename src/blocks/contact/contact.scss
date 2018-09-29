@@ -1,0 +1,36 @@
+@import "../mixins";
+
+.contact {
+  @include setup-section(680px, #ffffff);
+
+  &__content {
+    padding: 0 10px;
+  }
+
+  &__content h3 {
+    color: grey;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__info {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__info h2 {
+    font-weight: bold;
+  }
+
+  &__info p {
+    color: grey;
+    line-height: 2;
+    font-size: 1.4em;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

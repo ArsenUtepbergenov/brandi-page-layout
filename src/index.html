@@ -4,9 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <title>Sample modern</title>
 </head>
 <body>
+  <header id="home" class="header">
+    <div class="header__content">
+      <div class="topbar">
+        <div class="topbar__content">
+          <div class="topbar__left">
+            <div class="logo topbar__item">
+              <img src="src/assets/logo.png" alt="logo">
+            </div>
+            <p class="topbar__text topbar__item">I’am your tag line</p>
+          </div>
+          <nav class="navbar navbar--hidden">
+            <ul class="navbar__items">
+              <li class="navbar__item">
+                <a href="#home" class="navbar__link">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#features" class="navbar__link">Features</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#contact" class="navbar__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="topbar__button">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__dots">
+          <div class="slider__dot slider--dot-1"></div>
+          <div class="slider__dot slider--dot-2"></div>
+          <div class="slider__dot slider--dot-3"></div>
+        </div>
+        <div class="slider__slide slider--slide-1">
+          <div class="slider__content">
+            <h1>Meet <span class="slider__h header--text-bold">Brandi!</span></h1>
+            <h2><span class="slider__h header--text-color-theme">/creative</span> one page template.</h2>
+            <p>We are a team of professionals</p>
+          </div>
+        </div>
+        <div class="slider__slide slider--slide-2">
+          <div class="slider__content">
+            <h1>Meet Spring!</h1>
+            <h2>/creative one page template.</h2>
+            <p>We are a team of professionals</p>
+          </div>
+        </div>
+        <div class="slider__slide slider--slide-3">
+          <div class="slider__content">
+            <h1>Meet Cat!</h1>
+            <h2>/creative one page template.</h2>
+            <p>We are a team of professionals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="features" class="section features">
+      <div class="section__title">
+        <h2 class="section__h">Features</h2>
+        <div class="section__icon features__icon">
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+      <div class="features__content">
+        <article class="article">
+          <div class="article__icon">
+            <img src="src/assets/icon-1.png" alt="icon-1">
+          </div>
+          <div class="article__text">
+            <h2>Branding</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__icon">
+            <img src="src/assets/icon-2.png" alt="icon-2">
+          </div>
+          <div class="article__text">
+            <h2>Development</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__icon">
+            <img src="src/assets/icon-3.png" alt="icon-3">
+          </div>
+          <div class="article__text">
+            <h2>Consulting</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <div class="section__title">
+        <h2 class="section__h">Let’s Discuss</h2>
+        <div class="section__icon contact__icon">
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+      <div class="contact__content">
+        <h3>Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</h3>
+        <div class="contact__info">
+          <h2>Cras at ultrices erat, sed vulputate!</h2>
+          <p>2345 Setwant natrer, 1234,<br>
+             Washington. United States.<br>
+             8 (401) 1234 567<br>
+             hello@brandi.com<br>
+             www.brandi.com</p>
+        </div>
+        <div class="contact__form">
+          <form class="form" action="index.html" method="post">
+            <h2 class="form__h">Say Hello!</h2>
+            <div class="form__field">
+              <input class="form__input" type="text" required>
+              <span class="form__bar"></span>
+              <label class="form__label">Name</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="email" required>
+              <span class="form__bar"></span>
+              <label class="form__label">Email</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="text" required>
+              <span class="form__bar"></span>
+              <label class="form__label">City</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <span class="form__bar"></span>
+              <label class="form__label">Phone</label>
+            </div>
+            <div class="form__field">
+              <input class="form__input" type="text" required>
+              <span class="form__bar"></span>
+              <label class="form__label">Message</label>
+            </div>
+            <button type="submit" class="form__button">
+              <i class="far fa-envelope fa-lg header--text-color-theme"></i>
+              Send message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
 
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,6 @@
+@import "../mixins";
+
+.footer {
+  @include setup-section(405px, #1ea78d);
+  
+}
