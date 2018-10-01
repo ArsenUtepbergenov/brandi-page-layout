@@ -114,54 +114,82 @@
       </div>
       <div class="contact__content">
         <h3>Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</h3>
-        <div class="contact__info">
-          <h2>Cras at ultrices erat, sed vulputate!</h2>
-          <p>2345 Setwant natrer, 1234,<br>
-             Washington. United States.<br>
-             8 (401) 1234 567<br>
-             hello@brandi.com<br>
-             www.brandi.com</p>
-        </div>
-        <div class="contact__form">
-          <form class="form" action="index.html" method="post">
-            <h2 class="form__h">Say Hello!</h2>
-            <div class="form__field">
-              <input class="form__input" type="text" required>
-              <span class="form__bar"></span>
-              <label class="form__label">Name</label>
-            </div>
-            <div class="form__field">
-              <input class="form__input" type="email" required>
-              <span class="form__bar"></span>
-              <label class="form__label">Email</label>
-            </div>
-            <div class="form__field">
-              <input class="form__input" type="text" required>
-              <span class="form__bar"></span>
-              <label class="form__label">City</label>
-            </div>
-            <div class="form__field">
-              <input class="form__input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              <span class="form__bar"></span>
-              <label class="form__label">Phone</label>
-            </div>
-            <div class="form__field">
-              <input class="form__input" type="text" required>
-              <span class="form__bar"></span>
-              <label class="form__label">Message</label>
-            </div>
-            <button type="submit" class="form__button">
-              <i class="far fa-envelope fa-lg header--text-color-theme"></i>
-              Send message
-            </button>
-          </form>
+        <div class="contact__container">
+          <div class="contact__info">
+            <h2>Cras at ultrices erat, sed vulputate!</h2>
+            <p>2345 Setwant natrer, 1234,<br>
+               Washington. United States.<br>
+               8 (401) 1234 567<br>
+               hello@brandi.com<br>
+               www.brandi.com</p>
+          </div>
+          <div>
+            <form class="form contact__form" action="index.html" method="post">
+              <h2 class="form__h form--w-100">Say Hello!</h2>
+              <div class="form__group">
+                <div class="form__field">
+                  <input class="form__input" type="text" required>
+                  <span class="form__bar"></span>
+                  <label class="form__label">Name</label>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="email" required>
+                  <span class="form__bar"></span>
+                  <label class="form__label">Email</label>
+                </div>
+              </div>
+              <div class="form__group">
+                <div class="form__field">
+                  <input class="form__input" type="text" required>
+                  <span class="form__bar"></span>
+                  <label class="form__label">City</label>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <span class="form__bar"></span>
+                  <label class="form__label">Phone</label>
+                </div>
+              </div>
+              <div class="form__field form--w-100">
+                <input class="form__input form--long" type="text" required>
+                <span class="form__bar"></span>
+                <label class="form__label">Message</label>
+              </div>
+              <button type="submit" class="form__button">
+                <i class="far fa-envelope fa-lg header--text-color-theme"></i>
+                Send message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__content">
-
+      <div class="footer__box">
+        <div class="logo footer__logo">
+          <img src="src/assets/logo.png" alt="logo">
+        </div>
+        <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="footer__box footer--grow-2">
+        <h4>Explore</h4>
+        <p>Envato<br>
+          Themecurve<br>
+          Kreativeshowcase<br>
+          Freebiescurve
+        </p>
+        <p>Themeforest<br>
+          Microsoft<br>
+          Google<br>
+          Yahoo<br>
+        </p>
+      </div>
+      <div class="footer__box">
+        <p>Created with <i class="fas fa-heart"></i> by themecurve, exclusive for kreativeshowcase</p>
+        <p><i class="far fa-copyright"></i>2014 Brandi. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

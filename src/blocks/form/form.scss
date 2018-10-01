@@ -1,7 +1,7 @@
 .form {
   &__field {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   &__h {
@@ -86,6 +86,27 @@
 
     &__bar {
       width: 370px;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 770px;
+
+    &--w-100 {
+      width: 100%;
+    }
+
+    &--long {
+      width: 770px;
+    }
+
+    &--long ~ &__bar {
+      width: 770px;
+    }
+
+    &__button {
+      margin: 0;
+      margin-left: auto;
     }
   }
 }

@@ -4,7 +4,7 @@
   @include setup-section(680px, #ffffff);
 
   &__content {
-    padding: 0 10px;
+    padding: 0 10px 20px 0;
   }
 
   &__content h3 {
@@ -32,5 +32,53 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1170px) {
+    &__content {
+      padding: 0;
+      width: 1170px;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+
+    &__info {
+      text-align: left;
+      line-height: 1.5;
+      margin-right: 50px;
+      width: 250px;
+    }
+
+    &__info p {
+      font-size: 1em;
+    }
+
+    &__content h2 {
+      margin-top: 0;
+    }
+
+    &__content h3 {
+      margin-bottom: 80px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }

@@ -2,5 +2,40 @@
 
 .footer {
   @include setup-section(405px, #1ea78d);
-  
+  color: white;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  &__box {
+    text-align: center;
+  }
+
+  &__logo {
+    margin: auto;
+  }
+
+  @media screen and (min-width: 1170px) {
+    &__content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0;
+      width: 1170px;
+      margin: auto;
+    }
+
+    &__box {
+      text-align: left;
+    }
+
+    &--grow-2 {
+      flex-grow: 2;
+    }
+  }
 }
